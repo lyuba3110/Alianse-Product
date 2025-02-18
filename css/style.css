@@ -48,7 +48,6 @@ body{
     fill:#5c8ee6;
 }
 .header{
-    min-height: 100vh;
     padding-top: 5.875rem;
 }
 .header-image{
@@ -150,7 +149,7 @@ body{
     font-weight: 400;
     font-size: 1rem;
     line-height: 160%;
-    margin-bottom: 3.125rem;
+    margin-bottom: .9375rem;
     padding-top: 1.25rem;
 }
 .header-features{
@@ -158,17 +157,29 @@ body{
     min-height: 10.5rem;
     padding: 0;
     margin-top: 6.25rem;
+    margin-bottom: .625rem;
     list-style: none;
     color:#fff;
     position: relative;
 }
+.slider-buttons{
+    display: none;
+    height: 44px;
+}
+.slider-button-prev, .slider-button-next{
+    height: 100%;
+    flex-basis: 50%;
+    border: 1px solid rgba(235, 235, 240, 0.2);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    cursor: pointer;
+}
 .header-features-item{
-    padding: 1.875rem 3.125rem;
+    padding: 1.875rem 3.21rem;
+    min-height: 100%;
     border: 1px solid rgba(235, 235, 240, 0.2);       
     width: 17.75rem;
-}
-.header-features-item:not(:last-child){
-    border-right:none;
 }
 .header-features-text{
     font-size: 1rem;
@@ -176,10 +187,6 @@ body{
     font-weight: 400;
     margin-bottom:0;
     margin-top: 1.125rem;
-}
-.section{
-    margin-top: 9.375rem;
-    margin-bottom: 9.375rem;
 }
 .section-title{
     font-family: "Bebas Neue Book";
@@ -195,6 +202,7 @@ body{
 }
 .steps-item{
     max-width: 20.625rem;
+    max-height: 13.625rem;
 }
 .steps-num{
     color: rgb(92, 142, 230);
@@ -246,6 +254,21 @@ body{
     display: inline-block;
     margin-right: 1.25rem;
 }
+.slider-steps-buttons{
+    display:flex;
+    height: 40px;
+    justify-content: flex-end;
+}
+.slider-steps-button-prev, .slider-steps-button-next{
+    height: 2.5rem;
+    width: 3.75rem;
+    flex-basis: 10%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    cursor: pointer; 
+    background:rgb(92, 142, 230);
+}
 @media(max-width: 1700px){
     html{
         font-size: 14px;
@@ -266,9 +289,6 @@ body{
     }
     .header-nav{
         padding-left: 2rem;
-    }
-    .header-features-item:not(:last-child){
-        margin-right: 1rem;
     }
     .header-phone{
         margin-right: 2rem;
@@ -297,15 +317,17 @@ body{
         padding-left: 2rem;
         padding-right: 2rem;
     }
-}
-@media(max-width:1040px){
-    html{
-        font-size: 12px;
+    .slider-buttons{
+        display: flex;
     }
-    .container{
-        max-width: 70rem;
+    .slider-steps-buttons{
+        display: flex;
+    }
+    .header-features-item{
+        margin: 0;
     }
 }
+
 @media(max-width: 992px){
     html{
         font-size: 12px;
@@ -434,5 +456,41 @@ body{
     }
     .close-menu .mobile-menu-line:nth-child(3){
         transform: rotate(-45deg) translateY(-9px)
+    }
+}
+
+@media(max-width: 768px){
+    .container{ 
+        max-width: 40rem;
+    }
+    .navbar{
+        max-width: 768px;
+    }
+    .header-title{
+        font-size: 2rem;
+    }
+    .header-content{
+        padding-top: 2rem;
+    }
+}
+@media(max-width: 576px){
+    .container{ 
+        max-width: 90%;
+    }
+    .navbar{
+        max-width: 576px;
+    }
+    .header-title{
+        font-size: 2rem;
+    }
+    .header-content{
+        padding-top: 2rem;
+    }
+    .section{
+        margin-top: 6.25rem;
+        margin-bottom: 6.25rem;
+    }
+    .swiper-wrapper{
+        margin-bottom: 5rem;
     }
 }
