@@ -32,6 +32,9 @@ body{
     width: 100%;
     transition: background-color 0.2s, height 0.2s;
 }
+.logo{
+    display: none;
+}
 .logo-svg{
     width: 9rem;
     height: 2.75rem;
@@ -49,6 +52,7 @@ body{
 }
 .header{
     padding-top: 5.875rem;
+    margin-bottom: 9.375rem;
 }
 .header-image{
     background-image: url('../img/main_img.jpg');
@@ -487,10 +491,12 @@ body{
         padding-top: 2rem;
     }
     .section{
-        margin-top: 6.25rem;
         margin-bottom: 6.25rem;
     }
     .swiper-wrapper{
         margin-bottom: 5rem;
+    }
+    .header{
+        margin-bottom: 6.25rem;
     }
 }
