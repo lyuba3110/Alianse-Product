@@ -307,6 +307,7 @@ body{
 .cards{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 9.375rem;
 }
 .card{
     flex-basis: 33%;
@@ -346,6 +347,21 @@ body{
     right: 0;
     z-index: 0;
     width: 90%;
+}
+.trademark-cards{
+    display: flex;
+}
+.trademark-card{
+    flex-basis: 50%;
+    border: 1px solid rgb(235, 235, 240);
+    text-decoration: none;
+    transition: border 0.2s;
+    padding: 3.125rem;
+    display: grid;
+
+}
+.trademark-card:hover{
+    border-color: #5c8ee6;
 }
 @media(max-width: 1700px){
     html{
