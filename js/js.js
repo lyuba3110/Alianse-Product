@@ -91,3 +91,14 @@ const lightModeOff = (event) =>{
       }
     }
   });
+
+  const swiperBlog = new Swiper(".blog-slider",{
+    speed: 400, 
+    autoHeight:true,
+    spaceBetween:30,
+    slidesPerView: 2,
+    navigation:{
+      nextEl: '.blog-button-next',
+      prevEl: '.blog-button-prev',
+    },
+  });

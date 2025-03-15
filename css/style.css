@@ -291,13 +291,16 @@ body{
 }
 .slider-steps-buttons{
     display:flex;
+    
+}
+.primary-buttons-wrapper{
+    display: flex;
     height: 40px;
     justify-content: flex-end;
 }
-.slider-steps-button-prev, .slider-steps-button-next{
+.primary-button-prev, .primary-button-next{
     height: 2.5rem;
     width: 3.75rem;
-    flex-basis: 10%;
     display:flex;
     align-items:center;
     justify-content: center;
@@ -453,13 +456,84 @@ body{
     align-items:center;
     justify-content: center;
     padding: 1rem;
+    filter: grayscale(100%);
+}
+.clients-logo-item:hover{
+    filter: grayscale(0%);
+    transition: filter 0.5s;
 }
 .clients-logo{
     max-width: 100%;
     width: 70px;
     height: 70px;
 }
-
+.blog-card{
+    display: flex;
+    position: relative;
+    min-height: 25rem;
+    text-decoration: none;
+    color:#fff;
+    padding: 3.125rem;
+}
+.blog-card:before{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 45, 51, 0.6);
+    z-index: -1;
+}
+.blog-card-image{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.blog-card-title{
+    padding-top: 5.25rem;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 10px;
+}
+.blog-card-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    margin:0;
+}
+.blog-slider-footer{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-top: 1.875rem;
+}
+.button-link{
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    color: rgb(92, 142, 230);
+    font-family: "Noto Sans", "sans-serif";
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 160%;
+}
+.button-link::before{
+    content:'';
+    height: 1px;
+    background: rgb(92, 142, 230);
+    width: 2.5rem;
+    display: inline-block;
+    margin-right: 1.25rem;
+    transition: width 0.2s;
+}
+.button-link:hover::before{
+    width: 60px;
+}
 @media(max-width: 1700px){
     html{
         font-size: 14px;
