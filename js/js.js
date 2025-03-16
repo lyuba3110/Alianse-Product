@@ -106,6 +106,7 @@ const lightModeOff = (event) =>{
   const modal = document.querySelector(".modal");
   const modalToggle = document.querySelectorAll('[data-toggle=modal]');
   const modalClose = document.querySelector(".modal-close");
+  const modalWindow = document.querySelector(".modal");
   modalToggle.forEach((element) =>{
     element.addEventListener("click", (event) =>{
       event.preventDefault();
@@ -116,3 +117,13 @@ const lightModeOff = (event) =>{
     event.preventDefault();
     modal.classList.remove("is-open");
   });
+  modalWindow.addEventListener("click", (event) =>{
+    event.preventDefault();
+    modal.classList.remove("is-open");
+  });
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') { 
+      modal.classList.remove("is-open");
+    }
+});
+
