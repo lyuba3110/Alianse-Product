@@ -32,7 +32,7 @@ body{
     width: 100%;
     transition: background-color 0.2s, height 0.2s;
 }
-.logo{
+.logo-dark{
     display: none;
 }
 .logo-svg{
@@ -42,6 +42,14 @@ body{
 .navbar-light{
     background-color:#fff;
     color: #292d33;
+}
+.navbar-light .logo-light{
+    display: none;
+}
+.navbar-light .logo-dark{
+    display: block;
+}
+.navbar-scroll{
     height: 4.625rem;
 }
 .navbar-light .header-logo-path{
@@ -215,6 +223,44 @@ body{
     font-weight: 400;
     margin-bottom:0;
     margin-top: 1.125rem;
+}
+.single-block{
+    height: 22.8125rem;
+    background-color:#F0F2F5;
+    padding-top: 9rem;
+}
+.single-block-title{
+    font-weight: 25rem;
+    letter-spacing: 0%;
+    font-family: "Bebas Neue Book";
+    font-size: 5rem;
+    line-height: 120%;
+    margin: 1.875rem 0;
+}
+.breadcrumb{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+.breadcrumb-item{
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    text-decoration: none;
+    margin-right: .625rem;
+}
+.breadcrumb-link{
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    text-decoration: none;
+    color: #828A99;
+}
+ul.breadcrumb li+li:before {
+    margin-right: .625rem;
+    content: "\2014";
 }
 .section-title{
     font-family: "Bebas Neue Book";
