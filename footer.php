@@ -8,11 +8,11 @@
                         на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
                         <div class="input-group-wrapper">
                             <div class="input-group">
-                                <input id="user-name" type="text" class="input" name="username" placeholder="">
+                                <input id="user-name" type="text" class="input" name="username" placeholder="" maxlength="100" required >
                                 <label class="input-group-label" for="user-name">Имя</label>
                             </div>
                             <div class="input-group">
-                                <input id="user-phone" type="tel" class="input" name="userphone" placeholder="">
+                                <input id="user-phone" type="tel" class="input" name="userphone" placeholder="" maxlength="30" required>
                                 <label class="input-group-label" for="user-phone">Номер телефона</label>
                             </div>
                         </div>
@@ -128,3 +128,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
