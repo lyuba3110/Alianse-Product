@@ -11,7 +11,7 @@ $FormData = array(
 );
 
 foreach($FormData as $key => $value){
-  $text .= $key . "<b>" . urlencode($value) . "</b>" . "%0A";
+  $text .= $key."<b>".urlencode($value) ."</b>"."%0A";
 }
 
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id{$chat_id}&text={$text}&parse_mode=html", "r");

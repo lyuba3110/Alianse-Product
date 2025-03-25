@@ -657,6 +657,9 @@ ul.breadcrumb li+li:before {
     background-color:inherit;
     padding: 0 10px;
 }
+.input.is-valid{
+    border: 1px solid red;
+}
 .cta-form-footer{
     display: flex;
     margin-top: 1.25rem;
@@ -802,7 +805,7 @@ ul.breadcrumb li+li:before {
     transform: translateY(0);
     opacity: 1;
 }
-.modal-dialog{
+.modal-dialog .modal-popup-dialog{
     background-color:#fff;
     margin: auto;
     max-width: 28.75rem;
@@ -856,7 +859,10 @@ ul.breadcrumb li+li:before {
     width: 100%;
     margin-bottom: 1.5rem;
 }
-
+.modal-image{
+    width: 360px;
+    height: 310px;
+}
 @media(max-width: 1700px){
     html{
         font-size: 14px;
