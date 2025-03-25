@@ -145,7 +145,7 @@
                         <label class="input-group-label modal-input-label" for="modal-user-name">Имя</label>
                     </div>
                     <div class="input-group modal-input-group">
-                        <input id="modal-user-phone" type="tel" class="input modal-input" name="userphone" placeholder=" ">
+                        <input id="modal-user-phone" type="tel" class="input modal-input phone-mask" name="userphone" placeholder=" ">
                         <label class="input-group-label modal-input-label" for="modal-user-phone">Номер телефона</label>
                     </div>
                 </div>
@@ -162,20 +162,8 @@
             </form>
         </div>
 </div>
-<div class="modal">
-    <div class="modal-popup-dialog">
-        <img src="img/thanks.png" alt="thanks" class="modal-image">
-        <h2 class="modal-title">Спасибо за заявку!</h2>
-        <a href="" class="modal-close" data-toggle="modal">
-                <svg class="close-icon" width="24" height="24">
-                    <use href="img/sprite.svg#close"></use>
-                </svg>
-            </a>
-        <p class="modal-text">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие 
-            вопросы и поможем даже в самых сложных случаях!</p>
-        <button type="submit" class="button cta-form-button modal-form-button">Вернуться на главную</button>
-    </div>
 </div>
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/just-validate.production.min.js"></script>
     <script src="https://unpkg.com/imask"></script>

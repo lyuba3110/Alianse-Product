@@ -805,7 +805,7 @@ ul.breadcrumb li+li:before {
     transform: translateY(0);
     opacity: 1;
 }
-.modal-dialog .modal-popup-dialog{
+.modal-dialog {
     background-color:#fff;
     margin: auto;
     max-width: 28.75rem;
@@ -858,10 +858,6 @@ ul.breadcrumb li+li:before {
     display: block;
     width: 100%;
     margin-bottom: 1.5rem;
-}
-.modal-image{
-    width: 360px;
-    height: 310px;
 }
 @media(max-width: 1700px){
     html{
