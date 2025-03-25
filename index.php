@@ -113,7 +113,7 @@
             <a href="tel:87028374810" class="header-phone-link">+7(702) 837-48-10</a>
         </div>
         <!-- /.header-phone -->
-         <button class="navbar-button button" data-toggle ="modal">
+         <button class="navbar-button button" data-toggle ="modal" data-target="#feedback-modal">
             <svg class="button-icon" width="24" height="24">
                 <use href="img/sprite.svg#phone"></use>
             </svg>
@@ -133,7 +133,7 @@
                 простого факта: высококачественный прототип будущего проекта напрямую зависит от анализа 
                 существующих паттернов поведения.
             </p>
-            <div class="button">Подробнее о компании</div>
+            <div class="button header-button" data-toggle="modal" data-target="#feedback-modal">Подробнее о компании</div>
             </div>
             <!-- /.content -->
             <!-- Slider main container -->
